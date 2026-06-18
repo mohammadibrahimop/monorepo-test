@@ -61,6 +61,7 @@ jobs:
           args: >
             -Dsonar.projectKey=monorepo-test
             -Dsonar.sources=src
+            -Dsonar.ws.additionalHeaders="Bypass-Tunnel-Reminders: true"
 
   simulate_deployment:
     name: Simulate Production Deployment
